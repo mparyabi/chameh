@@ -1,0 +1,32 @@
+.Container{
+    width: 70%;
+    display: block;
+    margin: auto;
+    padding-top: 15pt;
+}
+
+.ProductImg{
+    height: 300pt;
+    object-fit: cover;
+    margin: 0 7px;
+    display: block;
+    width: 100%; /* اینجا width عکس شما */
+      
+}
+
+.moreName{
+    margin-bottom: 5pt;
+    font-weight: bold;
+    text-align: right;
+}
+
+.morePrice{
+    text-align: right;
+}
+
+
+.Imagewrapper {
+    position: relative;
+    display: inline-block;
+  }
+

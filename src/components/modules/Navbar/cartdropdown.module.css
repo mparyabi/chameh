@@ -1,0 +1,64 @@
+/* CartDropdown.module.css */
+.dropdown {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background: white;
+  border: 1px solid #ccc;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 10;
+  width: 200px;
+  padding: 10px;
+  border-radius: 10pt;
+}
+
+.cartListContainer {
+  list-style-type: none;
+  padding: 0;
+  text-align: right;
+  font-size: 11pt;
+}
+
+.cartItem {
+  margin-bottom: 12pt;
+  display: flex;
+  align-items: center;
+  line-height: 18pt;
+  justify-content: space-around;
+}
+
+.itemImg {
+  width: 25pt;
+  margin-left: 11pt;
+}
+
+.itemName {
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.itemPrice {
+  font-weight: 100;
+}
+
+.RemoveItem {
+  cursor: pointer;
+}
+
+.cartLink {
+  margin-top: 10pt;
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: center;
+  padding: 8pt;
+  border-radius: 7pt;
+}
+
+@media (max-width: 768px) {
+  .dropdown {
+    right: -129px;
+  }
+}

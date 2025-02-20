@@ -1,0 +1,19 @@
+*{
+  direction: rtl;
+  font-family: "shabnam";
+  text-decoration: none;
+}
+
+@font-face {
+  font-family: 'shabnam';
+  src:  url('/fonts/shabnam.eot') format('eot'),
+        url('/fonts/shabnam.ttf') format('ttf'),
+        url('/fonts/shabnam.woff') format('woff'),
+        url('/fonts/shabnam.woff2') format('woff2'),
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* جلوگیری از اسکرول افقی */
+}

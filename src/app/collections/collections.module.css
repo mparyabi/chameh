@@ -1,0 +1,28 @@
+.CollectionsContainer{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20pt 250pt;
+}
+
+.HeaderContainer{
+    display: flex;
+    margin-top: 35pt;
+    flex-direction: column;
+    align-items: center;
+}
+
+.HeaderContainer>img{
+    width: 60pt;
+}
+
+.Text{
+    font-size: 19pt;
+    margin-top: 20pt;
+    font-weight: bolder;
+}
+
+@media (max-width: 768px) {
+    .CollectionsContainer{
+       margin: 0;
+        }
+}

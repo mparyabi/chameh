@@ -1,0 +1,92 @@
+.CollectionPageContainer{
+    width: 70%;
+    display: block;
+    margin: auto;
+}
+
+
+.HeaderContainer{
+    display: flex;
+    margin-top: 35pt;
+    flex-direction: column;
+    align-items: center;
+}
+
+.HeaderContainer>img{
+    width: 60pt;
+}
+
+.PageHeader{
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 0;
+    align-items: center;
+}
+
+.Count{
+    font-size: 20pt;
+}
+
+.subCollection{
+    font-size: 20pt;
+}
+
+.CollectionName{
+    font-size: 30pt;
+    font-weight: bolder;
+}
+
+.Description{
+    margin: 80px 0;
+    text-align: center;
+    line-height: 31px;
+    font-size: 12pt;
+}
+
+.ShowMore{
+    background-color: black;
+    color: white;
+    padding: 7pt;
+    width: 179pt;
+    text-align: center;
+    margin: auto;
+    cursor: pointer;
+}
+
+.ProductCardContainer{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 50pt;
+}
+
+.PaginationContainer{
+    width: 100%;
+    height: 50pt;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Paginationno{
+margin: 0 20px ;
+ font-size: 14pt;
+ cursor: pointer;
+ color: inherit;
+}
+
+
+.Paginationno.active{
+    font-weight: bolder;
+    border-bottom: 2px solid black;
+}
+
+
+@media (max-width: 768px) {
+    .PageHeader{
+        display: block;
+        text-align: center;
+    }
+    .CollectionPageContainer{
+        width: 98%;
+    }
+}

@@ -1,0 +1,85 @@
+.logointextandlogo{
+    width: 85px;
+    margin: 68px;
+}
+
+.textintextandlogo{
+    width: 60%;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.textandlogo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.imageCarousel{
+    object-fit: cover;
+    width: 25%;
+    
+}
+
+.CarouselContainer{
+    display: flex;
+}
+
+.ceoImage{
+   width: 70%;
+   height: auto;
+   display: block;
+   margin-top: 150px;
+}
+
+.ceoContainer{
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.ceotextcontainer{
+width: 44%;
+margin: auto;
+margin-top: 60px;
+text-align: justify;
+}
+
+.sign{
+    display: flex;
+    justify-content: flex-end;
+    margin-left: 265px;
+    align-items: flex-end;
+    flex-direction: column;
+} 
+
+.signImg{
+    width: 250px;
+}
+
+.ceoName{
+    margin-left: 4px;
+    font-weight: 900;
+    font-size: 23px;
+    border-bottom: 3px solid black;
+}
+
+@media (max-width: 768px) {
+    .sign{
+        margin-left: 0;
+        align-items: center;
+    } 
+
+    .ceotextcontainer{
+        width: 87%;
+    }
+
+    .ceoImage{
+        width: 100%;
+        margin-top: 20px;
+     }
+     .textintextandlogo{
+        width: 87%;
+     }
+     
+  }

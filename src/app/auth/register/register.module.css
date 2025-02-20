@@ -1,0 +1,83 @@
+.myButton{
+    border: none;
+    width: 164px;
+    height: 51px;
+    margin: auto;
+    margin-top: 40px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    background: #333;
+    font-size: 15px;
+    color: #fff;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+}
+
+.formGroup{
+    display: flex;
+}
+
+.formControl{
+    border: 1px solid #333;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    display: block;
+    width: 100%;
+    height: 30px;
+    padding: 0;
+    margin-bottom: 25px;
+}
+
+.formControl:focus{
+ outline: none; 
+}
+
+.formWrapper{
+    position: relative;
+    width: 315px;
+}
+
+.wrapper{
+    min-height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    background-image: url("/images/auth/bg-registration-form-1.jpg")
+}
+
+
+.inner{
+    padding: 20px;
+    background: #fff;
+    max-width: 850px;
+    margin: auto;
+    display: flex;
+}
+
+.inner .image-holder {
+    width: 50%;
+}
+
+.title{
+    text-align: center;
+}
+
+
+.inner form {
+    width: 50%;
+    padding-top: 80px;
+    padding-left: 45px;
+    padding-right: 45px;
+}
+
+.formGroup input:first-child {
+    margin-left: 25px;
+}

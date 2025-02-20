@@ -1,0 +1,45 @@
+.first ,.second , .third, .fourth{
+    display: flex;
+    height: 400px;
+    margin-top: 5pt;
+    overflow: hidden;
+}
+
+.firstRight ,.secondRight {
+    width: 35%;
+}
+
+.thirdRight{
+    width: 60%;
+}
+
+.fourthRight{
+    width: 70%;
+}
+
+.firstRight>div>img ,.secondRight>div>img ,.thirdRight>div>img,.fourthRight>div>img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.firstLeft>div,.firstRight>div,.secondLeft>div,.secondRight>div,.thirdLeft>div,.thirdRight>div,.fourthLeft>div,.fourthRight>div{
+    height: 100%;
+}
+
+.firstLeft ,.secondLeft{
+    width: 65%;
+}
+
+.thirdLeft{
+    width: 40%;
+}
+.fourthLeft{
+    width: 30%;
+}
+
+.firstLeft>div>img ,.secondLeft>div>img ,.thirdLeft>div>img ,.fourthLeft>div>img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}

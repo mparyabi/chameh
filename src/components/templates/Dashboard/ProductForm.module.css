@@ -1,0 +1,291 @@
+/* سبک کلی فرم */
+.form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+  }
+  
+  /* فیلدها */
+  .field {
+    margin-bottom: 16px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .fieldLabel {
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 8px;
+  }
+  
+  .input,
+  .textarea,
+  .select {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+    color: #333;
+  }
+  
+  .input:focus,
+  .textarea:focus,
+  .select:focus {
+    outline: none;
+    border-color: #0070f3;
+    box-shadow: 0 0 0 2px rgba(0, 112, 243, 0.2);
+  }
+  
+  .textarea {
+    resize: vertical;
+    min-height: 80px;
+  }
+  
+  /* دکمه‌ها */
+  .submitButton,
+  .addButton {
+    background-color: #0070f3;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .submitButton:hover,
+  .addButton:hover {
+    background-color: #005bb5;
+  }
+  
+  .submitButton:disabled {
+    background-color: #ddd;
+    cursor: not-allowed;
+  }
+  
+  /* رنگ‌ها */
+  .colorPicker {
+    border: none;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    margin-right: 10px;
+  }
+  
+  .colorBox {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    vertical-align: middle;
+  }
+  
+  /* چک‌باکس */
+  .inlineGroup {
+    display: flex;
+    align-items: center;
+  }
+  
+  .checkbox {
+    margin-right: 10px;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+  }
+  
+  /* برای فایل ورودی‌ها */
+  .input[type="file"] {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+    background-color: #fff;
+    cursor: pointer;
+  }
+  
+  .input[type="file"]:hover {
+    border-color: #0070f3;
+  }
+  
+  /* برای dropdown دسته‌بندی */
+  .select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: #fff;
+    background-image: url('data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2012%2012%22%3E%3Cpath%20d%3D%22M6%202L11%207H1L6%202z%22/%3E%3C/svg%3E');
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+    color: #333;
+  }
+  
+  .select:focus {
+    outline: none;
+    border-color: #0070f3;
+    box-shadow: 0 0 0 2px rgba(0, 112, 243, 0.2);
+  }
+  
+  /* لیست و حذف آیتم‌های اضافه شده (رنگ‌ها و سایزها) */
+  .list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .listItem {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+  }
+  
+  .listItem button {
+    margin-left: 10px;
+    background-color: #e63946;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 4px;
+    font-size: 12px;
+    cursor: pointer;
+  }
+  
+  .listItem button:hover {
+    background-color: #d62828;
+  }
+  
+  /* گالری عکس‌ها */
+  .gallery {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+  
+  .gallery img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    cursor: pointer;
+  }
+  
+  .gallery img:hover {
+    opacity: 0.8;
+  }
+  
+  /* تنظیمات ریسپانسیو */
+  @media (max-width: 768px) {
+    .form {
+      padding: 15px;
+    }
+  
+    .field {
+      margin-bottom: 12px;
+    }
+  
+    .submitButton,
+    .addButton {
+      width: 100%;
+      padding: 10px;
+    }
+  
+    .gallery img {
+      width: 80px;
+      height: 80px;
+    }
+  }
+
+  /* پیش‌نمایش تصاویر */
+.imagePreview {
+    margin-bottom: 16px;
+  }
+  
+  .imageThumbnail {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 4px;
+    margin-right: 10px;
+  }
+  
+  .galleryPreview {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .imagePreview label {
+    font-weight: bold;
+  }
+  
+
+  /* کانتینر تصویر برای اعمال استایل به دکمه حذف */
+.imageContainer {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* دکمه حذف ضربدر */
+  .removeButton {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 5px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 16px;
+    z-index: 1;
+  }
+  
+  /* نمایش تصویر بندانگشتی */
+  .imageThumbnail {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 4px;
+    margin-right: 10px;
+  }
+  
+  /* کانتینر برای نمایش تصویر اصلی */
+.imageContainer {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* دکمه حذف ضربدر */
+  .removeButton {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 5px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 16px;
+    z-index: 1;
+  }
+  
+  /* نمایش تصویر بندانگشتی */
+  .imageThumbnail {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 4px;
+    margin-right: 10px;
+  }
+  

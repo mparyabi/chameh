@@ -1,0 +1,88 @@
+.container {
+  direction: ltr;
+}
+
+.main {
+  height: 400px;
+  background-image: url("/images/Footer/Footer-back.png");
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+  background-position-x: right;
+  margin-top: 20pt;
+}
+
+.bottom {
+  width: 100%;
+  height: 50px;
+  background-color: black;
+  padding-left: 110px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.bottomTexts {
+  color: white;
+  float: left;
+  display: flex;
+}
+
+.data {
+  text-align: left;
+  padding: 110px;
+}
+
+.titr {
+  font-weight: 900;
+  font-size: 15pt;
+  margin-top: 15pt;
+  margin-bottom: 5pt;
+}
+
+.texts {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.text {
+  margin-right: 22pt;
+}
+
+.bottomText {
+  margin-right: 40pt;
+}
+
+/* برای نمایشگرهای تبلت و موبایل */
+@media (max-width: 768px) {
+  .data {
+    padding: 10px;
+    text-align: center;
+  }
+  .bottom {
+    display: none;
+  }
+
+  .texts {
+    justify-content: center;
+  }
+  .text{
+   font-size:  17px;
+  }
+}
+
+@media (max-width: 480px) {
+  .data {
+    padding: 10px;
+    text-align: center;
+  }
+  .bottom {
+    display: none;
+  }
+
+  .texts {
+    justify-content: center;
+  }
+  .text{
+    font-size:  17px;
+   }
+}

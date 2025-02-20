@@ -1,0 +1,29 @@
+/* app/dashboard/sidebar.module.css */
+.sidebar {
+    width: 200px;
+    background-color: #1d2b38;
+    padding: 20px;
+    height: 100vh;
+    color: white;
+    position: sticky;
+    top: 0;
+  }
+  
+  .nav {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .navLink {
+    margin: 10px 0;
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+  }
+  
+  .navLink:hover {
+    background-color: #34495e;
+  }
+  

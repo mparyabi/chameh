@@ -1,0 +1,113 @@
+.checkoutContainer{
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 1rem;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding-bottom: 28pt;
+}
+
+.header{
+    text-align: center;
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.checkoutItems{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+
+.addressItem{
+    display: flex;
+    padding: 1rem;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.active{
+    border: 4px dashed #d1c1a8;
+}
+
+.city{
+    display: flex;
+    align-items: center;
+    margin-left: 30px;
+}
+
+.province {
+    display: flex;
+    align-items: center;
+    margin-left: 30px;
+}
+
+
+.address{
+    display: flex;
+    align-items: center;
+}
+
+
+.postal{
+    display: flex;
+    align-items: center;
+    margin-left: 30px;
+}
+
+.landline{
+    display: flex;
+    align-items: center; 
+}
+
+.firstLine{
+    display: flex;
+}
+
+.secondLine{
+    display: flex;
+}
+
+.moreAddress{
+    background-color: black;
+    color: white;
+    padding:10px ;
+    border-radius: 5px;
+    display: flex;
+    width: 121px;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    cursor: pointer;
+}
+
+.delete {
+    display: inline-flex; /* فقط به اندازه محتوای داخلی */
+    align-items: center;
+    color: #610000;
+    text-align: left;
+    justify-content: flex-end;
+    cursor: pointer;
+}
+
+
+@media (max-width: 768px) {
+    .firstLine{
+        display: block;
+    }
+    
+    .secondLine{
+        display: block;
+    }
+  }

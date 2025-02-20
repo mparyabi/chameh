@@ -1,0 +1,35 @@
+.IconText{
+    display: flex;
+}
+
+.Icon{
+    width: 24pt;
+    display: flex;
+    align-items: center;
+    font-size: 21pt;
+}
+
+.Text {
+    display: flex;
+    align-items: center;
+    font-size: 13pt;
+}
+
+
+.serviceTitr{
+    font-weight: bolder;
+    font-size: 17pt;
+}
+
+.IconTextContainer{
+    width: 100%;
+    height: 100pt;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    margin-top: 20pt;
+    flex-wrap: wrap;
+}
+

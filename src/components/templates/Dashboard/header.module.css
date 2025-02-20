@@ -1,0 +1,43 @@
+/* app/dashboard/header.module.css */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #2a3b4c;
+  color: white;
+}
+
+.title {
+  font-size: 1.5rem;
+}
+
+.userSection {
+  display: flex;
+  align-items: center;
+}
+
+.userName {
+  margin-right: 15px;
+  font-weight: bold;
+}
+
+.logoutButton {
+  padding: 8px 16px;
+  border: none;
+  background-color: #ff5e5e;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.logoutButton:hover {
+  background-color: #ff3b3b;
+}
+
+@media (max-width: 768px) {
+.title{
+  display: none;
+}
+}

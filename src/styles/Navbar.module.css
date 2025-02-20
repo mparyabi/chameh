@@ -1,0 +1,208 @@
+.container{
+    height: 90px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+
+.logoimg{
+    width: 125px;
+}
+
+.menuitem{
+    text-decoration: none;
+    margin: 0 20px;
+    color: black;
+}
+
+.menu{
+    width: 33%;
+}
+
+.logo{
+   width: 33%;
+}
+
+.icons{
+    width: 33%;
+    display: flex;
+    justify-content: center;
+}
+
+.iconimgs{
+    height: 25px;
+    margin: 0 15px;
+    cursor: pointer;
+}
+
+.right{
+    border-left: 3px solid black; 
+    display: flex;
+}
+
+.cartcontainer{
+    position: relative;
+    text-decoration: none;
+}
+
+.price{
+    position: absolute;
+    background-color: #d1c1a8;
+    padding: 3px 4px 0 4px;;
+    border-radius: 4px;
+    font-size: 10pt;
+    bottom: 19px;
+    right: 2px;
+    font-weight: 600;
+    color: black;
+}
+
+.left{
+    display: flex;
+}
+
+
+/* برای نمایشگرهای تبلت و موبایل */
+@media (max-width: 768px) {
+    .menu {
+      display: none; /* مخفی کردن منوی اصلی */
+    }
+  
+    .container {
+      justify-content: space-between;
+      flex-wrap: wrap;
+      align-items: center;
+      height: 115px;
+    }
+  
+    .logoimg {
+      width: 80px; /* کوچک‌تر برای موبایل */
+      margin: 15px;
+    }
+  
+    .icons {
+      width: 100%;
+    }
+  
+    .right {
+      display: flex;
+    }
+  
+    .left {
+      display: flex;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .container {
+      padding: 0 10px;
+      flex-wrap: wrap;
+      align-items: center;
+      height: 115px;
+    }
+  
+    .iconimgs {
+      height: 20px;
+    }
+  
+    .price {
+      font-size: 8px;
+    }
+    .icons {
+      width: 100%;
+    }
+    .right {
+      display: flex;
+      width: 50%;
+      justify-content: space-around;
+    }
+  
+    .left {
+      display: flex;
+      width: 50%;
+      justify-content: space-around;
+    }
+  }
+  
+  .hamburger {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+    height: 20px;
+    width: 25px;
+    z-index: 10;
+  }
+  
+  .bar {
+    height: 3px;
+    width: 100%;
+    background-color: black;
+    border-radius: 5px;
+  }
+  
+  /* منوی همبرگری */
+  .mobileMenu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 50%; /* نصف صفحه */
+    height: 100%;
+    background-color: white;
+    box-shadow: -4px 0px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px; /* فاصله از بالا */
+    z-index: 11;
+    animation: slideIn 0.3s ease-in-out;
+  }
+  
+  .mobileMenu .menuitem {
+    margin: 20px 0;
+    font-size: 16px;
+    color: black;
+    text-decoration: none;
+  }
+  
+  /* افکت تاریکی پس‌زمینه */
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* پس‌زمینه نیمه تاریک */
+    z-index: 10;
+    animation: fadeIn 0.3s ease-in-out;
+  }
+  
+  /* انیمیشن باز شدن منو */
+  @keyframes slideIn {
+    from {
+      transform: translateX(100%);
+    }
+    to {
+      transform: translateX(0);
+    }
+  }
+  
+  /* انیمیشن پس‌زمینه */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  /* نمایش منوی همبرگری فقط در موبایل */
+  @media (max-width: 768px) {
+    .hamburger {
+      display: flex;
+      margin: 15px;
+    }
+  }
+  

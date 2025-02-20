@@ -1,0 +1,86 @@
+.summaryItem {
+  display: flex;
+  padding: 1rem;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  align-items: center;
+}
+
+.couponButton {
+  display: flex;
+  align-items: center;
+  border: 1px solid #78664b;
+  padding: 2pt;
+  border-radius: 6pt;
+  background-color: #d1c1a8;
+  color: black;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.coupon {
+  margin: 0 30px;
+}
+
+.couponInput {
+  border-radius: 5pt;
+  border: 2px solid gray;
+  height: 27px;
+  text-align: center;
+}
+
+.item {
+  margin: 5pt 0;
+  border-bottom: 1px dashed gray;
+  padding: 7pt 0px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.total {
+  font-weight: bold;
+}
+
+.details {
+  width: 50%;
+}
+
+.payButtonContainer {
+  margin: auto;
+}
+
+.payButton {
+  display: flex;
+  align-items: center;
+  display: flex;
+  align-items: center;
+  border: 1px solid #78664b;
+  padding: 8pt;
+  border-radius: 6pt;
+  background-color: #d1c1a8;
+  color: black;
+}
+
+.CreditCard {
+  margin-left: 10pt;
+}
+
+.beforePrice {
+  color: #7b7b7b;
+  text-decoration: line-through;
+  font-size: 11pt;
+  margin: 10px 0;
+}
+
+@media (max-width: 768px) {
+  .details {
+    width: 100%;
+    margin-bottom: 20pt;
+  }
+  .summaryItem {
+    display: block;
+  }
+}

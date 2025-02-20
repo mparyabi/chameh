@@ -1,0 +1,161 @@
+.form {
+    max-width: 500px;
+    margin: 0 auto; /* برای مرکزیت افقی */
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .formContainer {
+    display: flex;
+    justify-content: center; /* مرکزیت افقی */
+    align-items: center; /* مرکزیت عمودی */
+    height: 100vh; /* تمام ارتفاع صفحه */
+  }
+    
+  .formGroup {
+    margin-bottom: 15px;
+  }
+    
+  .label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+  }
+    
+  .input,
+  .textarea,
+  .select {
+    width: 95%; /* عرض کامل داخل فرم */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    color: #555;
+  }
+    
+  .input:focus,
+  .textarea:focus,
+  .select:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 0 4px rgba(0, 123, 255, 0.5);
+  }
+    
+  .textarea {
+    resize: vertical;
+    height: 100px;
+  }
+    
+  .button {
+    display: block;
+    width: 100%;
+    padding: 10px 15px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+    
+  .button:hover {
+    background-color: #0056b3;
+  }
+  
+
+  .tableContainer {
+    margin: 20px auto;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 75%;
+    overflow-x: auto;
+  }
+  
+  .table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+  }
+  
+  .table th,
+  .table td {
+    border: 1px solid #ddd;
+    padding: 12px 15px;
+  }
+  
+  .table th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .table tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  .table tr:hover {
+    background-color: #f1f1f1;
+  }
+  
+  .table td {
+    font-size: 14px;
+    color: #555;
+  }
+  
+  .empty{
+    text-align: center;
+    margin: 50px;
+    font-size: 22pt;
+    color: gray;
+  }
+
+  /* discount.module.css */
+.tableContainer {
+  margin-top: 20px;
+  overflow-x: auto;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: right;
+  direction: rtl;
+}
+
+.table th, .table td {
+  padding: 12px;
+  border: 1px solid #ddd;
+}
+
+.table th {
+  background-color: #f4f4f4;
+}
+
+.deleteButton {
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 14px;
+  transition: background-color 0.3s;
+}
+
+.deleteButton:hover {
+  background-color: darkred;
+}
+
+.empty {
+  text-align: center;
+  color: #999;
+  font-size: 16px;
+}

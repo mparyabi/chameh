@@ -1,0 +1,23 @@
+.SizesContainer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+
+.size{
+    text-align: center;
+    border: 2px solid black;
+    margin:6px 6px 6px 0;
+    cursor: pointer;
+    width: 70pt;
+}
+
+.sizeSelected{
+    background-color: black;
+    color: white;
+    text-align: center;
+    border: 2px solid black;
+    margin:6px 6px 6px 0;
+    cursor: pointer;
+    width: 70pt;
+}

@@ -1,0 +1,163 @@
+.cartContainer {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 1rem;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding-bottom: 28pt;
+}
+
+.title {
+  text-align: center;
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cartItems {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.cartItem {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.cartItem:hover {
+  transform: translateY(-5px);
+}
+
+.itemImage {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-right: 1rem;
+  margin-left: 20pt;
+}
+
+.itemDetails {
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.itemName {
+  font-size: 1.2rem;
+  color: #333;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.itemPrice {
+  font-size: 1rem;
+  color: #777;
+}
+
+.CiCircleRemove {
+  margin-left: 10px;
+}
+
+.removeButton {
+  background-color: black;
+  color: white;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  display: flex;
+  align-items: center;
+}
+
+.removeButton:hover {
+  background-color: gray;
+}
+
+.cartSummary {
+  margin-top: 1rem;
+  padding: 1rem;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.clearCartButton {
+  width: 150pt;
+  background-color: #d1c1a8;
+  color: black;
+  padding: 1rem;
+  font-size: 12pt;
+  border: none;
+  border-radius: 8px;
+  margin-top: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.pay {
+  width: 95pt;
+  background-color: #d1c1a8;
+  color: black;
+  padding: 1rem;
+  font-size: 12pt;
+  border: none;
+  border-radius: 8px;
+  margin-top: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.clearCartButton:hover {
+  background-color: black;
+  color: white;
+}
+
+.emptyCart {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #555;
+}
+
+.sizeColor {
+  display: flex;
+  align-items: center;
+}
+
+.color {
+  width: 15px;
+  height: 30px;
+  margin-right: 10px;
+}
+
+@media (max-width: 768px) {
+  .itemDetails {
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .itemImage {
+    display: none;
+  }
+}

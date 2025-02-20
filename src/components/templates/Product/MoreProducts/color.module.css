@@ -1,0 +1,20 @@
+.color{
+    width: 40pt;
+    height: 10pt;
+    margin-right: 3px;
+    cursor: pointer;
+}
+
+.ColorsContainer{
+    display: flex;
+    margin: 10pt 0;
+}
+
+
+.selectedColor{
+    width: 40pt;
+    height: 10pt;
+    margin-right: 3px;
+    cursor: pointer;
+    border-bottom: 4px solid gray;
+}

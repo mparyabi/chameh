@@ -1,0 +1,135 @@
+.contactBanner{
+    height: 500px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.infoContainer{
+    height:300px;
+    background-color: #f3f3f5;
+    margin: 100px;
+    border-radius: 15px;
+    display: flex;
+}
+
+.infoBlackbox{
+    width: 300px;
+    height: 100%;
+    background-color: black;
+    border-radius: 15px;
+}
+
+.contactIcon{
+    height: 105px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-left: 50px;
+}
+
+.contactTextcontainer{
+    position: relative;
+}
+
+.contactText{
+    height: 100px;
+    display: flex;
+    align-items: center;
+    font-size: 30px;
+    margin-right: 40px;
+}
+
+.contactLine{
+    position: absolute;
+    height: 25px;
+    background-color: white;
+    width: 1617px;
+    border-radius: 12px;
+    margin-right: -148pt;
+}
+
+.formContainer{
+    background-image: url("/images/contact-us/form-back.jpg");
+    height: 500px;
+    background-repeat: no-repeat;
+    background-size:  cover;
+    background-position: bottom;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.formImg{
+    width: 100px;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.formText{
+    font-size: 16pt;
+    color: white;
+}
+
+.formInput{
+    width: 373px;
+    height: 34pt;
+    direction: ltr;
+    margin: 22px 0;
+    border-radius: 10px;
+    font-size: 12pt;
+    padding: 0 10pt;
+    text-align: center;
+}
+
+.FormElements{
+    display: flex;
+    flex-direction: column;
+    align-content: stretch;
+    justify-content: center;
+    align-items: center;
+}
+
+.formButton{
+    padding: 5pt 28pt;
+    font-weight: bold;
+    font-size: large;
+    border: 5px double black;
+    margin: 7pt;
+    cursor: pointer;
+}
+
+
+@media (max-width: 768px) {
+    
+.infoBlackbox{
+    width: 30%;
+}
+
+.infoContainer{
+    margin: 18px;
+}
+
+.contactText{
+    font-size: 16px;
+}
+.formInput{
+    width: 100%;
+}
+
+.contactIcon{
+    padding-left: 20px;
+    height: 101px;
+}
+     
+.contactText{
+    margin-right: 10px;
+}
+
+.contactLine {
+    width: 100% ;
+}
+  }
